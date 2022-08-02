@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel = "stylesheet" href="style.css"/>
+        <title>Tienda</title>
+    </head>
+
+    <body>
+        <div class="page-nav">
+            <h1>Tienda</h1>
+        </div>
+        <div class="contenedorPrincipal">
+            <h1 class="text-center">Productos</h1>
+            <div id = "page-content"  class="page-content">
+                <div class="contenedor1">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Aceite de cocina</h3>
+                        <img draggable="false" class="image" src="productos/producto1.png" width="425" height="428"/>
+                        <h3 class="price"> $16.00</h3>
+                    </div>
+                </div>
+
+                <div class="contenedor2">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Balon de Basquetball</h3>
+                        <img draggable="false" class="image" src="productos/producto2.jpeg"/>
+                        <h3 class="price" data-price="190">$190.00</h3>
+                    </div>
+                </div>
+
+                <div class="contenedor3">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Ventilador Piso</h3>
+                        <img draggable="false" class="image" src="productos/producto12.jpeg"/>
+                        <h3 class="price">$749.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor4">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Esclava De Plata</h3>
+                        <img draggable="false" class="image" src="productos/producto4.jpeg"/>
+                        <h3 class="price">$300.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor5">
+                    <div  draggable="true" class="container-product">
+                        <h3 class="title">Juego De Contenedores</h3>
+                        <img draggable="false" class="image" src="productos/producto13.jpeg"/>
+                        <h3 class="price">$519.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor6">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Earplugs</h3>
+                        <img draggable="false" class="image" src="productos/producto6.jpg"/>
+                        <h3 class="price">$25.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor7">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Sarten Tfal</h3>
+                        <img draggable="false" class="image" src="productos/producto11.jpeg"/>
+                        <h3 class="price">$449.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor8">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">SmartWatch SW-300</h3>
+                        <img draggable="false" class="image" src="productos/producto8.jpeg"/>
+                        <h3 class="price">$705.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor9">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Set Pesas Rusas</h3>
+                        <img draggable="false" class="image" src="productos/producto9.jpeg"/>
+                        <h3 class="price">$850.00</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor10">
+                    <div draggable="true" class="container-product">
+                        <h3 class="title">Rosario Budista</h3>
+                        <img draggable="false" class="image" src="productos/producto10.jpeg"/>
+                        <h3 class="price">$380.00</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <!--carrito-->
+        <section class="shopping-cart">
+            <div class="carrito" id="car">
+                <h1 id = "Carrito" class="text-center">CARRITO</h1>
+                <hr>
+                <div class="row" id="carrito">
+                    <div class="col-6">
+                        <div class="shopping-cart-header">
+                            <h6>Producto</h6>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="shopping-cart-header">
+                            <h6 class="text-truncate">Precio</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="shopping-cart-header">
+                            <h6>Cantidad</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart-items shoppingCartItemsContainer">  
+                </div>
+                <div class="row">
+                    <div class="col-12" id ="carCont">
+                        <div class="shopping-cart-total d-flex align-items-center">
+                            <p class="mb-0">Total</p>
+                            <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span></span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                            <button class="button-Buy" onclick="FinalizarCompra()">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+            </div>
+
+        </section>
+        
+        <script src="./scripts.js"></script>
+
+       
+        
+
+    </body>
+
+</html>

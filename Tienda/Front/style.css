@@ -1,0 +1,150 @@
+body {
+    margin: opx;
+    background-color: aliceblue;
+}
+/*button{
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 18px 28px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+
+}*/
+.button-OUT{
+   background-color: #f44336;
+    color: white;
+    border: 2px solid #f44336;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 9px;
+  
+
+}
+.button-OUT:hover {
+    background-color: white; /* Green */
+    color: black;
+}
+.button-Buy{
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 7px 11px;
+
+}
+.button-Buy:hover {
+    background-color: white; /* Green */
+    color: black;
+}
+.page-nav {
+    background-color: #00B4D8;
+    border: 1px solid black;
+}
+
+.page-nav h1{
+    margin: 5px;
+}
+
+.page-content {
+    float: left;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    height:690px;
+    overflow:scroll;
+    overflow-x:hidden;
+    
+}
+.container-product{
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+}
+.container-product img{
+    width: 200px;
+}
+
+.carrito{
+  float: right;
+  position: relative;
+    width: 1020px;
+    height: 690px;
+    background-color: #EEE7E6;
+    border-radius: 50px;
+    padding: 2px 16px;
+    
+    
+}
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+
+  .contenedorPrincipal{   
+    float: left;
+    width: 700px;
+    height: 795px;
+    background-color: #EEE7E6;
+    border-radius: 50px;
+    padding: 2px 16px;
+}
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .price {
+    margin: 0;
+  }
+  .shoppingCartItemsContainer{
+    height:430px;
+    overflow:scroll;
+    overflow-x:hidden;
+  }
+
+  .contenedor1{
+    margin: 0;
+  }
+
+  
